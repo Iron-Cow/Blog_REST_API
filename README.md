@@ -2,11 +2,11 @@ Here is simple REST API for authenticated Posts creations and likes adding/remov
 
 To do:
 #### User block
-- [ ] models setup
-- [ ] serializers setup
-- [ ] urls + other setup
-- [ ] user signup
-- [ ] user login (JWT Token authentication and refresh)
+- [x] models setup
+- [x] serializers setup
+- [x] urls + other setup
+- [x] user signup
+- [x] user login (JWT Token authentication and refresh)
 ---
 
 #### Post block

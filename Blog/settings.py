@@ -36,6 +36,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'django.contrib.staticfiles',
     'rest_framework',
     'account',
     'post',
@@ -130,3 +131,6 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAdminUser',
     ]
 }
+
+EMAILHUNTER_TOKEN = '8ad8cc4061ce97a37004e6bce9ca0aec9e7236de'
+EMAILHUNTER_URL = 'https://api.hunter.io/v2/email-verifier'
