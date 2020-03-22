@@ -30,8 +30,11 @@ class UserTests(TestCase):
         self.users = [usr_admin, usr1, usr2]
 
     def test_regular_user_request_user_list(self):
-        response = self.client.get(reverse('user-list'))
-        self.assertNotEqual(len(response.json()), len(self.users))
+        user = self.users[2]
+        auth_header = get_access_header(self.client, user)
+        response = self.client.get(reverse('user-list'),
+                                   **auth_header)
+        self.assertEqual(response.status_code, 403)
 
     def test_admin_user_request_user_list(self):
         user = self.users[0]
