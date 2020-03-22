@@ -10,13 +10,14 @@ To do:
 ---
 
 #### Post block
-- [ ] models setup
-- [ ] serializers setup
-- [ ] urls + other setup
-- [ ] post creation
-- [ ] post like
-- [ ] post unlike
+- [x] models setup
+- [x] serializers setup
+- [x] urls + other setup
+- [x] post creation
+- [x] post like
+- [x] post unlike
 ---
 
 ### Tests
-- [ ] Tests
+- [x] Users tests
+- [ ] Post tests
